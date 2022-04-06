@@ -29,8 +29,8 @@ class GeneralApplicationTest {
         fileProcessor = new FileProcessorImpl();
         inputFilePath = "src/test/resources/input.txt";
         outputFilePath = "src/test/resources/output.txt";
+        privateKeyP = 23;
         privateKeyQ = 19;
-        privateKeyP = 11;
         publicKey = privateKeyQ * privateKeyP;
     }
 

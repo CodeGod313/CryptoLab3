@@ -24,7 +24,6 @@ public class RabinEncryptionServiceImpl implements RabinEncryptionService {
 
     public String decrypt(String message, Integer privateKeyP, Integer privateKeyQ) {
         StringBuilder decryptedMessage = new StringBuilder();
-        List<Integer> lettersPositions = new ArrayList<>();
         int publicKey = privateKeyP * privateKeyQ;
         for (int i = 0; i < message.length(); i++) {
             int currentCharNumber = message.charAt(i);
