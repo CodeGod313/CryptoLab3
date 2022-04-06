@@ -38,16 +38,4 @@ class RabinEncryptionServiceImplTest {
         String expected = "HELLO_THERE";
         Assertions.assertEquals(expected, actual);
     }
-
-    @Test
-    void popa() {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 'а'; i < 'я'; i++) {
-            System.out.print((char) i);
-            stringBuilder.append(i);
-            stringBuilder.append(" ");
-        }
-        System.out.println();
-        System.out.println(stringBuilder);
-    }
 }
